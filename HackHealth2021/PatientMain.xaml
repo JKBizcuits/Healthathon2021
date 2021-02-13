@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="HackHealth2021.PatientMain">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Would you like to take today's modified HADS test?" BackgroundColor="#164D1C" TextColor="#E3E1E1" FontSize="40" TextTransform="None" FontAttributes="Bold" Padding="10,20,10,40" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+            <Label Text="" Padding="0,50"/>
+            <Button Clicked="Button_Clicked"  Text="Take the HADS test" Padding="0" FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

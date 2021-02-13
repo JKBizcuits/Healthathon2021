@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="HackHealth2021.MainPage">
+
+    <StackLayout BackgroundColor="WhiteSmoke">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*" />
+                <RowDefinition Height="2*" />
+                <RowDefinition Height="3*" />
+            </Grid.RowDefinitions>
+            
+        </Grid>
+
+        <Label Grid.Row ="1" FontSize="100" Padding="50" HorizontalTextAlignment="Center" FontFamily="Trebuchet MS" BackgroundColor="#AA0EAA" Text="Virtus" class ="title" TextColor="White" FontAttributes="Italic"/>
+        <Label Padding="100"/>
+        <Label Grid.Row ="3" Padding="10" FontSize="40" HorizontalTextAlignment="Center" Text="Welcome"  />
+        <Button Grid.Row ="3" Text="Let's proceed" FontSize="20" Clicked="Button_Clicked"/>
+        
+
+        <!--
+        <Entry x:Name="firstNameEntry"
+               Placeholder="Enter First Name" />
+        <Entry x:Name="lastNameEntry"
+               Placeholder="Enter Last Name" />
+        <Button Text="Add to Database"
+                Clicked="OnButtonClicked" />
+        <CollectionView x:Name="collectionView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Label Text="{Binding FirstName}"
+                               FontSize="Medium" />
+                        <Label Text="{Binding LastName}"
+                               TextColor="Silver"
+                               FontSize="Small" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        -->
+        <!--
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+        -->
+    </StackLayout>
+
+</ContentPage>

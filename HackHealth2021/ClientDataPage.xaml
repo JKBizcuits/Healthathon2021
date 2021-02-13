@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="HackHealth2021.ClientDataPage">
+    <StackLayout>
+        <Label x:Name="Illuminance" FontSize="50" BackgroundColor="#D01919" TextColor="#F0F0F0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Label x:Name="Acceleration" FontSize="50" BackgroundColor="#093A71" TextColor="#F0F0F0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Label x:Name="Orientation" FontSize="50" BackgroundColor="#095D0C" TextColor="#F0F0F0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+        <Label x:Name="Application" FontSize="50" BackgroundColor="#D0D40E" TextColor="#F0F0F0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+        <!--
+        <CollectionView x:Name="collectionView">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout> 
+                        <Button Text="click" Clicked="Button_Clicked"/>
+                        <Label Text="{Binding TestResult}"
+                               FontSize="Medium" />
+                        <Label Text="{Binding ComputedResult}"
+                               
+                               FontSize="Medium" />
+                       
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        -->
+     </StackLayout>
+</ContentPage>

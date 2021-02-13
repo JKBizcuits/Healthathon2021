@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="HackHealth2021.TestPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Modified HABS Test (5 Min)"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" FontSize="40" BackgroundColor="#0F77B4" TextColor="#F0F0F0" HorizontalTextAlignment="Center" Padding="20,0,0,20" />
+                <Picker SelectedIndexChanged="OnPickerSelectedIndexChanged" Title="I feel tense or 'wound up':">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Not at all</x:String>
+                            <x:String>From time to time, ocassionally</x:String>
+                            <x:String>A lot of the time</x:String>
+                            <x:String>Most of the time</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Picker SelectedIndexChanged="OnPickerSelectedIndexChanged" Title="I get a sort of frightened feeling like 'butterflies' in the stomach:">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Not at all</x:String>
+                            <x:String>Occasionally</x:String>
+                            <x:String>Quite often</x:String>
+                            <x:String>Very often</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Picker SelectedIndexChanged="OnPickerSelectedIndexChanged" Title="I get a sort of frightened feeling as if something awful is about to happen:">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Not at all</x:String>
+                            <x:String>A little, but it doesn't worry me</x:String>
+                            <x:String>Yes, but not too badly</x:String>
+                            <x:String>Very definitely and quite badly</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Picker SelectedIndexChanged="OnPickerSelectedIndexChanged" Title="I feel restless as I have to be on the move:">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Not at all</x:String>
+                            <x:String>Not very much</x:String>
+                            <x:String>Quite a lot</x:String>
+                            <x:String>Very much indeed</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Picker SelectedIndexChanged="OnPickerSelectedIndexChanged" Title="Worrying thoughts go through my mind:">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Only occasionally</x:String>
+                            <x:String>From time to time, but not too often</x:String>
+                            <x:String>A lot of the time</x:String>
+                            <x:String>A great deal of the time</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Picker SelectedIndexChanged="OnPickerSelectedIndexChanged" Title="I get sudden feelings of panic:">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Not at all</x:String>
+                            <x:String>Not very often</x:String>
+                            <x:String>Quite often</x:String>
+                            <x:String>Very often indeed</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Picker SelectedIndexChanged="OnPickerSelectedIndexChanged" Title="I can sit at ease and feel relaxed:">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}" x:Name="Q7">
+                            <x:String>Definitely</x:String>
+                            <x:String>Usually</x:String>
+                            <x:String>Not Often</x:String>
+                            <x:String>Not at all</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Button Text="Submit" Clicked="Button_Clicked"/>
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
